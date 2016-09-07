@@ -25,7 +25,7 @@ describe('removeQueryParameterByNameAndValue', function () {
 
         var result = removeQueryParameterByNameAndValue('test', 'test', url);
 
-        assert.equal(result, 'http://example.com?');
+        assert.equal(result, 'http://example.com');
     });
 
     it('should remove parameter if more params after', function () {

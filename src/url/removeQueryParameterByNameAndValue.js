@@ -10,5 +10,7 @@ module.exports = function (name, value, url) {
 
     url = url.replace('?&', '?');
 
+    url = url.replace(/\?$/, '');
+
     return url;
 };
